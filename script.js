@@ -158,7 +158,7 @@ form.addEventListener("submit", async function (event) {
 
         // Send data to backend
         const response = await fetch(
-            "/submit-admission",
+       "https://student-admission-website.onrender.com/submit-admission",
             {
                 method: "POST",
                 body: formData
