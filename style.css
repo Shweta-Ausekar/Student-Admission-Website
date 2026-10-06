@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+
+    background: #f4f8ff;
+
+    color: #17233c;
+
+    min-height: 100vh;
+}
+
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+
+    background: linear-gradient(
+        120deg,
+        #087ee8,
+        #05a8f5
+    );
+
+    color: white;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 92, 190, 0.15);
+}
+
+
+.logo {
+
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+
+.header-status {
+
+    background:
+        rgba(255,255,255,0.15);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.3);
+
+    padding: 9px 15px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+}
+
+
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+}
+
+
+
+/* ==============================
+   WELCOME
+============================== */
+
+.welcome {
+
+    background:
+        linear-gradient(
+            120deg,
+            #087ee8,
+            #05a8f5
+        );
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,126,232,0.18);
+}
+
+
+.welcome h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome p {
+
+    font-size: 14px;
+
+    opacity: 0.9;
+
+    line-height: 1.6;
+}
+
+
+
+/* ==============================
+   FORM CARD
+============================== */
+
+.form-card {
+
+    background: white;
+
+    border:
+        1px solid #e1eaf7;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(39,89,150,0.06);
+}
+
+
+.form-title {
+
+    border-bottom:
+        1px solid #edf1f7;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.form-title h2 {
+
+    color: #142d54;
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+
+.form-title p {
+
+    color: #8290a6;
+
+    font-size: 12px;
+}
+
+
+
+/* ==============================
+   FORM
+============================== */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.form-group {
+
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #4e607c;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    background: #f8fbff;
+
+    border:
+        1px solid #dbe6f4;
+
+    color: #263c5e;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+textarea {
+
+    resize: vertical;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #087ee8;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(8,126,232,0.08);
+}
+
+
+input[type="file"] {
+
+    background: white;
+
+    padding: 10px;
+}
+
+
+small {
+
+    display: block;
+
+    color: #8b98aa;
+
+    font-size: 10px;
+
+    margin-top: 6px;
+}
+
+
+
+/* ==============================
+   TERMS
+============================== */
+
+.terms {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 10px 0 25px;
+
+    color: #5e708d;
+
+    font-size: 12px;
+}
+
+
+.terms input {
+
+    width: auto;
+
+    accent-color: #087ee8;
+}
+
+
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    border-top:
+        1px solid #edf1f7;
+
+    padding-top: 22px;
+}
+
+
+.reset-btn,
+.submit-btn {
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+
+.reset-btn {
+
+    background: #eef3fa;
+
+    color: #526a8c;
+}
+
+
+.reset-btn:hover {
+
+    background: #dfe8f4;
+}
+
+
+.submit-btn {
+
+    background: #ffbd17;
+
+    color: #17233c;
+}
+
+
+.submit-btn:hover {
+
+    background: #ffca3d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(255,189,23,0.25);
+}
+
+
+
+/* ==============================
+   RESULT
+============================== */
+
+.result-card {
+
+    display: none;
+
+    background: white;
+
+    border:
+        1px solid #dcefe4;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(39,89,150,0.06);
+}
+
+
+.success-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    background: #e7faef;
+
+    color: #159447;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.result-card h2 {
+
+    color: #173d2a;
+
+    margin-bottom: 8px;
+}
+
+
+.result-card p {
+
+    color: #71809a;
+
+    font-size: 13px;
+}
+
+
+.application-number {
+
+    display: inline-block;
+
+    background: #f1f7ff;
+
+    color: #087ee8;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    margin: 18px 0;
+
+    font-weight: bold;
+}
+
+
+.new-application {
+
+    border: none;
+
+    background: #087ee8;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.new-application:hover {
+
+    background: #0067d8;
+}
+
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+
+    text-align: center;
+
+    color: #8b98aa;
+
+    font-size: 11px;
+
+    padding: 20px;
+
+}
+
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media(max-width: 700px) {
+
+    .header {
+
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        align-items: flex-start;
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin: 20px auto;
+    }
+
+
+    .form-card {
+
+        padding: 20px;
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .welcome h1 {
+
+        font-size: 23px;
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+    }
+
+
+    .reset-btn,
+    .submit-btn {
+
+        width: 100%;
+    }
+
+}
