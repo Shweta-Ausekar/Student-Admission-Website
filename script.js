@@ -156,29 +156,23 @@ form.addEventListener("submit", async function (event) {
 
     try {
 
-        // Send data to backend
-        const response = await fetch(
-       "https://student-admission-website.onrender.com/submit-admission",
-            {
-                method: "POST",
-                body: formData
-            }
-        );
+        
+ // Send data to backend
+const response = await fetch(
+    "https://student-admission-website.onrender.com/submit-admission",
+    {
+        method: "POST",
+        body: formData
+    }
+);
 
+const result = await response.json();
 
-        const result = await response.json();
-
-
-
-        if (!response.ok || !result.success) {
-
-            throw new Error(
-                result.message ||
-                "Admission submission failed."
-            );
-
-        }
-
+if (!response.ok || !result.success) {
+    throw new Error(
+        result.message || "Admission submission failed."
+    );
+}
 
 
         // Show success
