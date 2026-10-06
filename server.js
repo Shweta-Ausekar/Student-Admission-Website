@@ -25,10 +25,10 @@ db.exec(`
         marksheet TEXT,
         submittedAt TEXT
     )
-`);
+ `);
 
 console.log("Database connected successfully");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Uploads folder
 const uploadFolder = path.join(__dirname, "uploads");
